@@ -34,16 +34,16 @@ A API possui duas controllers principais:
 # 🚀 Endpoints Disponíveis
 
 ## ContatoController
-- **POST** → cria um novo contato  
-- **GET** → lista todos os contatos  
-- **GET** → obtém um contato específico pelo Id  
-- **GET** → obtém contatos filtrando pelo Nome  
-- **PUT** → atualiza um contato existente  
-- **DELETE** → remove um contato  
+- **POST** `/api/contato/Criar` → cria um novo contato  
+- **GET** `/api/contato/ObterTodos` → lista todos os contatos  
+- **GET** `/api/contato/ObterPorId/{id}` → obtém um contato específico pelo Id  
+- **GET** `/api/contato/ObterPorNome/{nome}` → obtém contatos filtrando pelo Nome  
+- **PUT** `/api/contato/Atualizar/{id}` → atualiza um contato existente  
+- **DELETE** `/api/contato/Excluir/{id}` → remove um contato  
 
 ## UsuarioController
-- **GET** → retorna a data e hora atuais  
-- **GET** → retorna uma mensagem de apresentação personalizada
+- **GET** `/api/usuario/ObterDataHoraAtual` → retorna a data e hora atuais  
+- **GET** `/api/usuario/Apresentar/{nome}` → retorna uma mensagem de apresentação personalizada  
 
 ## 🔎 Diferença entre as Controllers
 
